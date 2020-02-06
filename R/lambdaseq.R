@@ -34,7 +34,7 @@
 #'
 #' \dontrun{
 #'   library(glmnet)
-#'   fit.lasso <- cv.glmnet(y, x, lambda = lambda)
+#'   fit.lasso <- cv.glmnet(x, y, lambda = lambda)
 #'   coef.lasso <- coef(fit.lasso, s = "lambda.1se")
 #' }
 #'
@@ -59,7 +59,7 @@ lambdaseq <- function(x, y, weight = NA, alpha = 1, standardise = TRUE,
     lambda[length(lambda)] <-  lambdaMin;
   }
 
-  return(list(lambda, "lambdaMin" = lambdaMin,
+  return(list("lambda" = lambda, "lambdaMin" = lambdaMin,
               "lambdaMax" = lambdaMax, "nullMSE" = lambdaFit$nullMSE))
 }
 
