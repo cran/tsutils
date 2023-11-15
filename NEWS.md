@@ -1,3 +1,8 @@
+# VERSION 0.9.4 (12 Nov 2023)
+- Fix for seasplot graphs
+- Fix for tsutils.Rd
+- Fix documentation formatting
+
 # VERSION 0.9.3 (07 Jul 2022)
 - Recompiled for new version of R
 - Added more data input filters for nemenyi.

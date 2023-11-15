@@ -21,10 +21,10 @@ abc(x, prc = c(0.2, 0.3, 0.5))
 \value{
 Return object of class \code{abc} and contains:
 \itemize{
-\item{\code{value}}{: a vector containing the importance value of each series.}
-\item{\code{class}}{: a vector containing the class membership of each series.}
-\item{\code{rank}}{: a vector containing the rank of each series, with 1 being the highest ranking series.}
-\item{\code{conc}}{: the importance concentration of each class, as percentage of total value.}
+\item \code{value}: a vector containing the importance value of each series.
+\item \code{class}: a vector containing the class membership of each series.
+\item \code{rank}: a vector containing the rank of each series, with 1 being the highest ranking series.
+\item \code{conc}: the importance concentration of each class, as percentage of total value.
 }
 }
 \description{
@@ -32,9 +32,9 @@ Perform ABC analysis on a set of time series.
 }
 \section{Methods (by generic)}{
 \itemize{
-\item \code{plot}: plot ABC or XYZ analyses.
-}}
+\item \code{plot(abc)}: plot ABC or XYZ analyses.
 
+}}
 \examples{
 x <- abs(matrix(cumsum(rnorm(5400,0,1)),36,150))
 z <- abc(x)

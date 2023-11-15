@@ -7,8 +7,8 @@
 #' @param y this is an optional time series input that can be used to get seasonal periodicity (\code{m}) and the start point.
 #' @param type type of seasonal dummies to create.
 #' \itemize{
-#' \item{\code{"bin}}{: binary dummies}
-#' \item{\code{"trg}}{: trigonometric dummies. See notes.}
+#' \item \code{"bin}: binary dummies.
+#' \item \code{"trg}: trigonometric dummies. See notes.
 #' }
 #' @param full If full is \code{TRUE}, then keeps the m-th dummy that is co-linear to the rest. See notes.
 #'
